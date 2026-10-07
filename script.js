@@ -66,6 +66,21 @@ function track(event, props) {
   window.addEventListener('scroll', onScroll, { passive: true });
 })();
 
+// reveal — aparición suave de títulos/tarjetas al entrar en viewport.
+(function () {
+  var items = document.querySelectorAll('.reveal');
+  if (!items.length) return;
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('revealed');
+        io.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15 });
+  items.forEach(function (el) { io.observe(el); });
+})();
+
 // cta_click + whatsapp_click — todos los CTA abren WhatsApp (Decisión A: N/A backend).
 (function () {
   document.querySelectorAll('[data-cta]').forEach(function (el) {

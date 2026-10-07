@@ -125,7 +125,7 @@ html:not(.no-js) .hero-in{ animation:hero-fade-up .7s cubic-bezier(.2,.7,.2,1) f
   color:var(--cs-cafe-soft);
   margin:0 0 14px;
 }
-.hero-copy h1{ font-size:clamp(28px,6vw,44px); line-height:1.14; font-style:normal; color:var(--cs-cafe); }
+.hero-copy h1{ font-size:clamp(23px,6.8vw,44px); line-height:1.16; font-style:normal; color:var(--cs-cafe); }
 .hero-copy h1 .accent{ color:var(--cs-rayo-ink); }
 .hero-copy .subhead{ font-size:16px; color:var(--cs-cafe-soft); margin:0 0 28px; max-width:44ch; }
 
@@ -185,7 +185,7 @@ html:not(.no-js) .reveal.revealed{ opacity:1; transform:none; }
   flex-direction:column;
   gap:28px;
 }
-.nosotros-media img{ border-radius:6px; aspect-ratio:4/3; object-fit:cover; object-position:50% 20%; }
+.nosotros-media img{ border-radius:6px; width:100%; height:auto; }
 .nosotros-copy h2{ font-size:clamp(24px,4vw,32px); }
 .nosotros-copy p{ color:var(--cs-cafe-soft); font-size:15.5px; margin:0 0 14px; }
 .nosotros-copy p:last-child{ margin-bottom:0; }
